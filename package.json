@@ -1,0 +1,18 @@
+{
+  "name": "project_demo",
+  "version": "1.0.0",
+  "description": "it's a website offering medical health services for both humans and pets",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
