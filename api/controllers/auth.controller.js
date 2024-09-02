@@ -2,7 +2,7 @@ import User from '../models/user.model.js';
 import crypto from 'crypto';
  
 
-export const signup = async (req, res) => {
+export const signup = async (req, res, next) => {
   const { username, email, password } = req.body;
   const salt = crypto.randomBytes(16).toString('hex');
   const hashedPassword = crypto.scryptSync(password, salt, 64).toString('hex');
@@ -16,9 +16,8 @@ export const signup = async (req, res) => {
     });
 
   } catch (error) {
-    res.status(500).json({
-      message: error.message,
-    });
+    next(error);
+   
   }
 
 
