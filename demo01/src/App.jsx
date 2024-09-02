@@ -10,17 +10,24 @@ import Footer from './components/footer';
 export default function App() {
   return (
     <BrowserRouter>
-      {/* header */}
-      <Header />
-     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/signin" element={<Signin />} />
-      <Route path="/signup" element={<Signup />} />
-      
-     </Routes>
-     <Footer />
-     
+      {/* Use flex container to ensure footer stays at the bottom */}
+      <div className="flex flex-col min-h-screen">
+        {/* Header */}
+        <Header />
+
+        {/* Main content area */}
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
     </BrowserRouter>
-  )
+  );
 }
