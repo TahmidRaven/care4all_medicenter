@@ -25,7 +25,7 @@ export default function Footer() {
           <h2 className="text-xl font-bold">Our Services</h2>
         </div>
         <div className="text-sm">
-          <p>Tahmid Iqbal Copyright © 2024 Tahmid - All rights reserved || Designed By: Tahmid</p>
+          <p>Tahmid Raven Copyright © 2024 - All rights reserved || Designed By: Tahmid, Ahtesham, Mehedi, Toufik</p>
         </div>
       </div>
     </footer>

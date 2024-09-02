@@ -1,59 +1,34 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Signin() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-  };
-
+export default function SignIn() {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="max-w-md w-full bg-white shadow-md rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full mt-1 p-2 border rounded"
-              required
-            />
-          </div>
-          <div className="mb-6">
-            <label className="block text-gray-700">Password</label>
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              className="w-full mt-1 p-2 border rounded"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-700"
-          >
+    <div className='min-h-screen flex items-center justify-center bg-gray-100'>
+      <div className='p-6 max-w-lg w-full bg-white shadow-md rounded-lg'>
+        <h1 className='text-3xl text-center font-semibold mb-6'>Sign In</h1>
+        <form className='flex flex-col gap-4'>
+          <input
+            type='email'
+            placeholder='Email'
+            id='email'
+            className='bg-slate-100 p-3 rounded-lg'
+          />
+          <input
+            type='password'
+            placeholder='Password'
+            id='password'
+            className='bg-slate-100 p-3 rounded-lg'
+          />
+          <button className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
             Sign In
           </button>
         </form>
+        <div className='flex gap-2 mt-5 justify-center'>
+          <p>Don't have an account?</p>
+          <Link to='/signup'>
+            <span className='text-blue-500'>Sign Up</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
