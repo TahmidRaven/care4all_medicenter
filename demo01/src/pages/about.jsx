@@ -1,5 +1,9 @@
 import React from 'react';
 
+// Import images from assets folder
+import humanHealthcareImage from '../assets/humanhealthcare.jpg';
+import petHealthcareImage from '../assets/pethealthcare.jpg';
+
 export default function About() {
   return (
     <div className="bg-gray-100 min-h-screen p-6">
@@ -12,7 +16,8 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h3 className="text-2xl font-semibold mb-4">Human Healthcare</h3>
-            <img src="https://via.placeholder.com/400x300?text=Human+Healthcare" alt="Human Healthcare" className="w-full rounded-lg mb-4" />
+            {/* Use the imported image for human healthcare */}
+            <img src={humanHealthcareImage} alt="Human Healthcare" className="w-full rounded-lg mb-4" />
             <p>
               Our human healthcare services include a wide range of medical specialties, ensuring comprehensive care for you and your family. From preventive care to advanced treatments, we have you covered.
             </p>
@@ -20,7 +25,8 @@ export default function About() {
           
           <div>
             <h3 className="text-2xl font-semibold mb-4">Pet Healthcare</h3>
-            <img src="https://via.placeholder.com/400x300?text=Pet+Healthcare" alt="Pet Healthcare" className="w-full rounded-lg mb-4" />
+            {/* Use the imported image for pet healthcare */}
+            <img src={petHealthcareImage} alt="Pet Healthcare" className="w-full rounded-lg mb-4" />
             <p>
               We understand that pets are part of your family too. Our pet healthcare services are designed to provide your furry friends with the best possible medical care, from routine check-ups to emergency services.
             </p>

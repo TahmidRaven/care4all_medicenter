@@ -10,7 +10,7 @@ import Footer from './components/footer';
 export default function App() {
   return (
     <BrowserRouter>
-      {/* Use flex container to ensure footer stays at the bottom */}
+      {/* Using flex container to ensure footer stays at the bottom */}
       <div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />

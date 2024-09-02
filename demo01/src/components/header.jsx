@@ -10,7 +10,7 @@ export default function Header() {
           <Link to="/" className="hover:text-gray-300">Home</Link>
           <Link to="/about" className="hover:text-gray-300">About</Link>
           <Link to="/signin" className="hover:text-gray-300">Sign In</Link>
-          <Link to="/signup" className="hover:text-gray-300">Sign Up</Link>
+          {/* <Link to="/signup" className="hover:text-gray-300">Sign Up</Link> */}
         </div>
       </nav>
     </header>
