@@ -34,7 +34,7 @@ export default function SignIn() {
         return;
       }
       dispatch(signInSuccess(data));
-      navigate('/');
+      navigate('/about');
     } catch (error) {
       dispatch(signInFailure(error));
     }
@@ -66,7 +66,13 @@ export default function SignIn() {
       </form>
       <div className='flex gap-2 mt-5'>
         <p>Dont Have an account?</p>
-        <Link to='/sign-up'>
+        <Link to='/signup'>
+          <span className='text-blue-500'>Sign up</span>
+        </Link>
+      </div>
+      <div className='flex gap-2 mt-2'>
+        <p>Are you an admin?</p>
+        <Link to='/signup'>
           <span className='text-blue-500'>Sign up</span>
         </Link>
       </div>
