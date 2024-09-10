@@ -4,7 +4,7 @@ import { faGithub, faFacebook, faInstagram, faYoutube } from '@fortawesome/free-
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-4 mt-8">
+    <footer className="bg-gray-800 text-white p-4">
       <div className="container mx-auto text-center">
         <div className="flex justify-center space-x-4 mb-4">
           <a href="https://github.com/TahmidRaven" target="_blank" rel="noopener noreferrer">
@@ -13,10 +13,10 @@ export default function Footer() {
           <a href="https://github.com/TahmidRaven/care4all_medicenter" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} size="2x" className="hover:text-gray-400" />
           </a>
-          <a href="https://instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/tahmid_raven/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" className="hover:text-gray-400" />
           </a>
-          <a href="https://youtube.com/your-youtube" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/@tahmidraven" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faYoutube} size="2x" className="hover:text-gray-400" />
           </a>
         </div>

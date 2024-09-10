@@ -1,18 +1,27 @@
 import React from 'react';
+import backgroundImage from '../assets/care4allwall.jpg';
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Care4All</h1>
-        <p className="text-lg mb-8">
-          Your one-stop solution for all healthcare and pet services. We are committed to providing the best services for you and your beloved pets.
+    <div
+      className="min-h-screen flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="max-w-3xl mx-auto p-8 bg-white bg-opacity-80 shadow-lg rounded-xl text-center">
+        <h1 className="text-5xl font-extrabold text-gray-800 mb-6">Welcome to Care4All</h1>
+        <p className="text-xl text-gray-600 mb-10">
+          Your one-stop solution for all healthcare and pet services. We are committed to providing the best care for you and your beloved pets.
         </p>
-        <div className="flex justify-center space-x-4">
-          <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
+        <div className="flex justify-center space-x-6">
+          {/* Updated button styles */}
+          <button
+            className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 transition-transform transform hover:scale-105"
+          >
             Learn More
           </button>
-          <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700">
+          <button
+            className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 transition-transform transform hover:scale-105"
+          >
             Get Started
           </button>
         </div>
