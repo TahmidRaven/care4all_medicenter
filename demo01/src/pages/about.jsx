@@ -6,7 +6,7 @@ import petHealthcareImage from '../assets/pethealthcare.jpg';
 
 export default function About() {
   return (
-    <div className="bg-gray-100 min-h-screen p-6">
+    <div className="bg-gray-100 min-h-screen p-7">
       <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
         <h2 className="text-3xl font-bold mb-6 text-center">About Care4All</h2>
         <p className="text-lg mb-6">

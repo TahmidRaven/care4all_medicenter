@@ -2,7 +2,7 @@ import React from 'react';
 import backgroundImage from '../assets/care4allwall.jpg';
 
 export default function Home() {
-  return (
+  return ( 
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
