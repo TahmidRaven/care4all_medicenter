@@ -8,7 +8,6 @@ import Header from './components/header';
 import Footer from './components/footer';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/profile';
-import backgroundWall from './assets/backgroundWall.jpg'; // Import background image
  
 
 
@@ -16,12 +15,7 @@ export default function App() {
   return (
     <BrowserRouter>
       {/* Using flex container to ensure footer stays at the bottom */}
-
-      <div
-        className="min-h-screen flex flex-col bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundWall})` }}
-      >
-
+      <div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />
 
