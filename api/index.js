@@ -1,9 +1,12 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import axios from 'axios';
 
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
+import newsRoutes from './routes/news.route.js';
+import locationRoutes from './routes/location.route.js';
 
 
 
@@ -28,6 +31,8 @@ app.listen(3000, () => {
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/news', newsRoutes);
+app.use('/api', locationRoutes);
 
 app.use((err, req,res, next) => { 
   const statusCode = err.statusCode || 500;

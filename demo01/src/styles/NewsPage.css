@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Full screen background image */
+body {
+  background-image: url('https://st3.depositphotos.com/13349494/17896/i/450/depositphotos_178964966-stock-photo-stethoscope-paper-cardiogram-scattered-pills.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.news-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for content readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh; /* Ensures the content area expands to the full viewport height */
+  position: relative;
+}
+
+.news-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #004d40;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.news-articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-article-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1 1 calc(33.333% - 20px); /* Three-column layout */
+  max-width: calc(33.333% - 20px);
+}
+
+.news-article {
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  background: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.news-article h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #00796b;
+  font-family: 'Arial', sans-serif;
+}
+
+.news-article:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .news-article-link {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.news-search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.news-search-input:focus {
+  border-color: #004d40;
+}
+
+  

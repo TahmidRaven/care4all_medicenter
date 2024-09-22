@@ -1,0 +1,76 @@
+.location-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.find-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00796b; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    margin: 10px; /* Add space around the button */
+    margin-bottom: 20px; /* Add space specifically below the button */
+}
+
+.find-button:hover {
+    background-color: #00796b; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.location-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between items */
+    margin-top: 20px; /* Add space above the list */
+}
+
+/* Responsive location-item with updated animation and color coding */
+.location-item {
+    background-color: rgba(245, 245, 245, 0.8); /* Semi-transparent light gray background */
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Maximum width of each item */
+    cursor: pointer; /* Indicate clickable items */
+    text-align: left; /* Align text to the left */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the location-item */
+.location-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.location-item h2 {
+    font-size: 1.75rem; /* Adjust font size as needed */
+    margin: 0;
+    color: #00796b; /* Greenish color */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .location-item {
+        width: 45%; /* Two columns layout on medium screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .location-item {
+        width: 30%; /* Three columns layout on large screens */
+    }
+}
+
+.error-message {
+    color: red;
+}

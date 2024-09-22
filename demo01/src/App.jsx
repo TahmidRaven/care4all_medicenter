@@ -6,6 +6,8 @@ import Signup from './pages/signup';
 import Signin from './pages/signin';
 import Header from './components/header';
 import Footer from './components/footer';
+import NewsPage from './pages/NewsPage';
+import LocationPage from './pages/LocationPage';
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/news" element={<NewsPage />} />
+            <Route path="/find-locations" element={<LocationPage />} />
           </Routes>
         </main>
 
