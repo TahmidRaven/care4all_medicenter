@@ -1,22 +1,25 @@
 import User from '../models/user.model.js';
 import { errorHandler } from '../utils/error.js';
-import bcryptjs from 'bcryptjs';
+import crypto from 'crypto';
 
 export const test = (req, res) => {
   res.json({
-    message: 'API is working!',
+    message: 'yay! api connection successful',
   });
 };
 
-// update user
-
+// Update user
 export const updateUser = async (req, res, next) => {
   if (req.user.id !== req.params.id) {
     return next(errorHandler(401, 'You can update only your account!'));
   }
+  
   try {
+    // Hash the password if it's being updated
     if (req.body.password) {
-      req.body.password = bcryptjs.hashSync(req.body.password, 10);
+      const salt = crypto.randomBytes(16).toString('hex');
+      const hashedPassword = crypto.scryptSync(req.body.password, salt, 64).toString('hex');
+      req.body.password = `${salt}:${hashedPassword}`;
     }
 
     const updatedUser = await User.findByIdAndUpdate(
@@ -31,6 +34,7 @@ export const updateUser = async (req, res, next) => {
       },
       { new: true }
     );
+
     const { password, ...rest } = updatedUser._doc;
     res.status(200).json(rest);
   } catch (error) {
