@@ -1,0 +1,158 @@
+[33mcommit e384e02ef4cf64967c40c2da6a0c1338e11fd116[m[33m ([m[1;36mHEAD -> [m[1;32mcopy_of_main[m[33m)[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 23 00:23:21 2024 +0600
+
+    Revert "modified some ui"
+    
+    This reverts commit d2bbe11aff9e584ae3efd704150e7fc4fcf8cd19.
+
+[33mcommit 1455fa59ef27260c732b6acd877bc0b000dc05a1[m[33m ([m[1;31morigin/copy_of_main[m[33m)[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 23 00:22:29 2024 +0600
+
+    made some changes need to revert
+
+[33mcommit d2bbe11aff9e584ae3efd704150e7fc4fcf8cd19[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Sun Sep 22 19:29:25 2024 +0600
+
+    modified some ui
+
+[33mcommit 38b95c0681de9930c13b9a6256c9013eae1501b8[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Sun Sep 15 13:02:22 2024 +0600
+
+    copy of main branch created
+
+[33mcommit 665a8057bb4beecd9edddb4da15c78dda2611d1e[m[33m ([m[1;31morigin/reOauth[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mreOauth[m[33m, [m[1;32mmain[m[33m)[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Sun Sep 15 09:13:23 2024 +0600
+
+    updated files
+
+[33mcommit f70bb04fdd0899ae7053c024671bf6da585fa9f4[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Sat Sep 14 09:33:39 2024 +0600
+
+    separate profile page
+
+[33mcommit 1bf8c1dcbee6aa1a733b249f6ba991ff00391ab2[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Sat Sep 14 09:30:06 2024 +0600
+
+    private profile page
+
+[33mcommit de3a1ece5769f9150b7a180c396863e755796d02[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Fri Sep 13 16:34:07 2024 +0600
+
+    my OAuth works
+
+[33mcommit e0a836e227e085dd8ec2a7983dfc39486ce8353c[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Fri Sep 13 12:32:22 2024 +0600
+
+    new auth
+
+[33mcommit efdd01007fbfebe6bc84c3ed8818fcdae01cd578[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Tue Sep 10 15:42:16 2024 +0600
+
+    added redux persist so no user data gets lost while refreshing the page
+
+[33mcommit 3b6f04aac4f5929d151a70480e016f1d1f12443f[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Tue Sep 10 07:31:27 2024 +0600
+
+    added redux toolkit for states
+
+[33mcommit 3fbab48b9c7f9f0fe3e1b6c0047cd31cb4a41125[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 2 13:01:54 2024 +0600
+
+    signin works fine
+
+[33mcommit b8091b4d692ca4d41e28df6cfe6171fda73e392c[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 2 12:53:43 2024 +0600
+
+    created sign in api route
+
+[33mcommit 61633f29348c06503ce285c2719a514f9edfcc76[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 2 10:32:13 2024 +0600
+
+    signup completed
+
+[33mcommit ddc044b50ffb37b3acf4d11c1c43d147af7c5b42[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 2 07:10:46 2024 +0600
+
+    modified the ui of signin-signup pages
+
+[33mcommit 82c91a6d0f3e65c8a9da833a78f7a8ecc20b2bf1[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 2 06:29:07 2024 +0600
+
+    added middleware and func to handle errors
+
+[33mcommit 6c6e07299b4fb895e9f359066be863d15e51e72c[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Sep 2 06:16:58 2024 +0600
+
+    signup api route & first user-auth db created
+
+[33mcommit 2ffc6d4ffcd5fe45345083161fc3781e1dcc922a[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 11:50:33 2024 +0600
+
+    api created in controllers & routes
+
+[33mcommit 599f6aac2429d7fe36d5ca2d5084fb74ae49a956[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 10:47:09 2024 +0600
+
+    added user model
+
+[33mcommit b9d3f923dda05d872cf2ca9bb96835beb66af951[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 03:25:12 2024 +0600
+
+    connected database
+
+[33mcommit 127507a3f65dea6e8fe0d9a51bf060e7b9dda7c9[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 02:51:28 2024 +0600
+
+    ran server
+
+[33mcommit c688c7a268ac69efbca16d14b3259c9e89d2f29b[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 01:48:44 2024 +0600
+
+    created header.jsx and footer.jsx
+
+[33mcommit 5cf5ba9718a2b8be6757679e22ca7800a51df855[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 01:24:10 2024 +0600
+
+    added routes and pages
+
+[33mcommit 51edf2cd45bdfb5d6040b9c339cdffe538af108a[m
+Merge: 6014da9 52ce133
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 00:22:55 2024 +0600
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 52ce133470fbabce7f33ad89e1f3417d4593e0a4[m
+Author: RAVEN <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 00:10:28 2024 +0600
+
+    Initial commit
+
+[33mcommit 6014da94a6a88336fe1f4d3f28d05c3d20609c76[m
+Author: Raven Endless <103381750+TahmidRaven@users.noreply.github.com>
+Date:   Mon Jul 8 00:00:38 2024 +0600
+
+    created project+installed tailwind css w/ necessary packages
