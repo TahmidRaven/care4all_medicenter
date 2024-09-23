@@ -31,6 +31,37 @@ export default function Home() {
 
       {/* New Section for Cards */}
       <div className="max-w-3xl mx-auto p-8 mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+
+        <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4">Blood Donation</h3>
+          <p className="text-gray-600 mb-4">
+            Donate blood and save lives. Your contribution can make a big difference.
+          </p>
+          <Link to="/donation" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
+            Donate
+          </Link>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4">Book an Appointment</h3>
+          <p className="text-gray-600 mb-4">
+            Schedule an appointment with our specialists at your convenience.
+          </p>
+          <Link to="/appointment" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
+            Schedule Now
+          </Link>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4">Feedback</h3>
+          <p className="text-gray-600 mb-4">
+            We value your feedback. Let us know how we can improve our services.
+          </p>
+          <Link to="/feedback" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
+            Feedback
+          </Link>
+        </div>
         <div className="bg-white shadow-lg rounded-lg p-6 text-center">
           <h3 className="text-2xl font-semibold mb-4">Emergency Services</h3>
           <p className="text-gray-600 mb-4">
@@ -41,15 +72,6 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="bg-white shadow-lg rounded-lg p-6 text-center">
-          <h3 className="text-2xl font-semibold mb-4">Donations</h3>
-          <p className="text-gray-600 mb-4">
-            Support our mission by donating to help those in need. Your contribution makes a difference!
-          </p>
-          <Link to="/donate" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
-            Donate Now
-          </Link>
-        </div>
       </div>
     </div>
   );
