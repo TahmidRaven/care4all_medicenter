@@ -9,6 +9,10 @@ import Footer from './components/footer';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/profile';
 import backgroundWall from './assets/backgroundWall.jpg'; // Import background image
+
+import AdminSignup from './pages/adminsignup';
+import AdminSignin from './pages/adminsignin';
+import AdminDashboard from './pages/admin';
  
 
 
@@ -35,6 +39,11 @@ export default function App() {
             <Route element={<PrivateRoute />}>
               <Route path='/profile' element={<Profile />} />
              </Route>
+            <Route path="/adminsignup" element={<AdminSignup />} />
+            <Route path="/adminsignin" element={<AdminSignin />} />
+            <Route path='/admin/' element={<AdminDashboard />} />
+
+
           </Routes>
         </main>
 
