@@ -8,6 +8,10 @@ import Header from './components/header';
 import Footer from './components/footer';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/profile';
+import AddQuestion from './pages/add_question';
+import TakeQuiz from './pages/take_quiz';
+import AddToHealthLib from './pages/add_to_health_lib';
+import HealthLibrary from './pages/health_library';
  
 
 
@@ -26,6 +30,12 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path='/add-question' element={<AddQuestion />} />
+            <Route path="/take-quiz" element={<TakeQuiz />} />
+            <Route path="/add-to-health-library" element={<AddToHealthLib />} />
+            <Route path="/health-library" element={<HealthLibrary />} />
+            
+
             <Route element={<PrivateRoute />}>
               <Route path='/profile' element={<Profile />} />
              </Route>

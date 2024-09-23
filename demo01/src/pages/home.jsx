@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundImage from '../assets/care4allwall.jpg';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return ( 
@@ -14,11 +15,20 @@ export default function Home() {
         </p>
         <div className="flex justify-center space-x-6">
           {/* Updated button styles */}
-          <button
-            className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 transition-transform transform hover:scale-105"
-          >
-            Learn More
-          </button>
+          <Link to="/add-question" className="text-slate-700 hover:underline">
+              Add Question
+          </Link>
+          <Link to="/take-quiz" className="text-slate-700 hover:underline">
+              Take Quiz
+          </Link>
+          <Link to="/add-to-health-library" className="text-slate-700 hover:underline">
+              Add to Health Library
+          </Link>
+          <Link to="/health-library" className="text-slate-700 hover:underline">
+              Health Library
+          </Link>
+          
+          
           <button
             className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 transition-transform transform hover:scale-105"
           >
