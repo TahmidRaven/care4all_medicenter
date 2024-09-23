@@ -9,10 +9,10 @@ const AdminDashboard = () => {
         <h2 className="text-2xl font-bold mb-6">Admin Dashboard</h2>
         <ul className="flex flex-col gap-4">
           <li>
-            <Link to="/admin/questions" className="hover:text-slate-300">Add Questions</Link>
+            <Link to="/add-question" className="hover:text-slate-300">Add Questions</Link>
           </li>
           <li>
-            <Link to="/admin/health-library" className="hover:text-slate-300">Manage Health Library</Link>
+            <Link to="/add-to-health-library" className="hover:text-slate-300">Manage Health Library</Link>
           </li>
           <li>
             <Link to="/admin/users" className="hover:text-slate-300">Manage Users</Link>
@@ -38,10 +38,10 @@ const AdminDashboard = () => {
 
         {/* Quick Links Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <Link to="/admin/questions" className="bg-white p-4 rounded-lg shadow-lg flex items-center justify-center hover:bg-slate-100 transition">
+          <Link to="/add-question" className="bg-white p-4 rounded-lg shadow-lg flex items-center justify-center hover:bg-slate-100 transition">
             <h2 className="text-xl font-semibold">Add Questions</h2>
           </Link>
-          <Link to="/admin/health-library" className="bg-white p-4 rounded-lg shadow-lg flex items-center justify-center hover:bg-slate-100 transition">
+          <Link to="/add-to-health-library" className="bg-white p-4 rounded-lg shadow-lg flex items-center justify-center hover:bg-slate-100 transition">
             <h2 className="text-xl font-semibold">Manage Health Library</h2>
           </Link>
           <Link to="/admin/users" className="bg-white p-4 rounded-lg shadow-lg flex items-center justify-center hover:bg-slate-100 transition">

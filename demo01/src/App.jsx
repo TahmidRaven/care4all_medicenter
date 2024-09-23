@@ -9,6 +9,10 @@ import Footer from './components/footer';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/profile';
 import backgroundWall from './assets/backgroundWall.jpg'; // Import background image
+import AddQuestion from './pages/add_question';
+import TakeQuiz from './pages/take_quiz';
+import AddToHealthLib from './pages/add_to_health_lib';
+import HealthLibrary from './pages/health_library';
 
 import AdminSignup from './pages/adminsignup';
 import AdminSignin from './pages/adminsignin';
@@ -42,6 +46,10 @@ export default function App() {
             <Route path="/adminsignup" element={<AdminSignup />} />
             <Route path="/adminsignin" element={<AdminSignin />} />
             <Route path='/admin/' element={<AdminDashboard />} />
+            <Route path='/add-question' element={<AddQuestion />} />
+            <Route path="/take-quiz" element={<TakeQuiz />} />
+            <Route path="/add-to-health-library" element={<AddToHealthLib />} />
+            <Route path="/health-library" element={<HealthLibrary />} />
 
 
           </Routes>

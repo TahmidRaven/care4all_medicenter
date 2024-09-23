@@ -51,6 +51,28 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      <div className="max-w-3xl mx-auto p-8 mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4">Take Quiz</h3>
+          <p className="text-gray-600 mb-4">
+          Challenge yourself with our engaging quizzes! Test your knowledge on various health topics and discover how much you know about maintaining a healthy lifestyle. Each quiz is designed to be both educational and fun, offering insights into key areas of well-being. Ready to get started? Take the quiz now and improve your health awareness!
+          </p>
+          <Link to="/take-quiz" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
+            Take Quiz
+          </Link>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4">Health Library</h3>
+          <p className="text-gray-600 mb-4">
+          Explore our comprehensive Health Library to access a wide range of medical information and resources. Whether you're looking to understand symptoms, learn about treatments, or discover preventive measures, our library has you covered. Simply search for topics like "fever," "diabetes," or "allergies" to find reliable, easy-to-understand health information.
+          </p>
+          <Link to="/health-library" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
+            Health Library
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
