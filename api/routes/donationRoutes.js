@@ -4,9 +4,9 @@ import { createDonation, getDonations } from '../controllers/donationController.
 const router = express.Router();
 
 // Route to create a new donation
-router.post('/donations', createDonation);
+router.post('/', createDonation);
 
 // Route to get all donations
-router.get('/donations', getDonations);
+router.get('/', getDonations);
 
 export default router;

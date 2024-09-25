@@ -1,30 +1,35 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+// controllers/donationController.js
+import Donation from '../models/Donation.js';
+import { errorHandler } from '../utils/error.js';
 
-import donationRoutes from './routes/donationRoutes.js';
+// Create a new donation
+export const createDonation = async (req, res, next) => {
+  const { name, email, bloodType, details } = req.body;
 
-dotenv.config();
-
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('Connected to MongoDB');
-  })
-  .catch((err) => {
-    console.error('Error connecting to MongoDB:', err.message);
+  const newDonation = new Donation({
+    name,
+    email,
+    bloodType,
+    details,
   });
 
-const app = express();
+  try {
+    await newDonation.save();
+    res.status(201).json({
+      message: "Donation created successfully!",
+      donation: newDonation,
+    });
+  } catch (error) {
+    next(errorHandler(400, error.message));
+  }
+};
 
-app.use(express.json());
-
-app.use('/api', donationRoutes);
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// Get all donations
+export const getDonations = async (req, res, next) => {
+  try {
+    const donations = await Donation.find();
+    res.status(200).json(donations);
+  } catch (error) {
+    next(errorHandler(500, error.message));
+  }
+};
