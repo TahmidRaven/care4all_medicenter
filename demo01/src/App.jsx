@@ -13,9 +13,9 @@ import backgroundWall from './assets/backgroundWall.jpg'; // Import background i
 import AdminSignup from './pages/adminsignup';
 import AdminSignin from './pages/adminsignin';
 import AdminDashboard from './pages/admin';
- 
+
 import Donation from './pages/Donations';
-import Appointment from './pages/AppointmentScheduling';
+import AppointmentManagement from './pages/AppointmentManagement'; // Make sure this matches your file structure
 import FeedbackRatings from './pages/FeedbackRatings';
 
 export default function App() {
@@ -40,14 +40,13 @@ export default function App() {
             <Route path="/signup" element={<Signup />} />
             <Route element={<PrivateRoute />}>
               <Route path='/profile' element={<Profile />} />
-             </Route>
+            </Route>
             <Route path="/adminsignup" element={<AdminSignup />} />
             <Route path="/adminsignin" element={<AdminSignin />} />
             <Route path='/admin/' element={<AdminDashboard />} />
             <Route path="/donation" element={<Donation />} />
-            <Route path="/appointment" element={<Appointment />} />
+            <Route path="/appointment" element={<AppointmentManagement />} /> {/* Updated to AppointmentManagement */}
             <Route path="/feedback" element={<FeedbackRatings />} />
-
           </Routes>
         </main>
 

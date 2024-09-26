@@ -1,16 +1,18 @@
-// controllers/feedbackController.js
 import Feedback from '../models/Feedback.js';
 
 // Create a new feedback
 export const createFeedback = async (req, res) => {
+  console.log('Received feedback:', req.body); // Add this line to log the incoming request
   try {
     const feedback = new Feedback(req.body);
     await feedback.save();
     res.status(201).json(feedback);
   } catch (error) {
+    console.error('Error saving feedback:', error); // Log the error for debugging
     res.status(400).json({ message: error.message });
   }
 };
+
 
 // Get all feedbacks
 export const getFeedbacks = async (req, res) => {

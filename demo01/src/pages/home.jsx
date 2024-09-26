@@ -39,7 +39,7 @@ export default function Home() {
             Donate blood and save lives. Your contribution can make a big difference.
           </p>
           <Link to="/donation" className="bg-slate-700 text-white p-2 rounded-lg uppercase hover:opacity-95">
-            Donate
+            Blood Donation
           </Link>
         </div>
 

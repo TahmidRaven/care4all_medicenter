@@ -1,9 +1,8 @@
-// mongodb+srv://group02:<db_password>@care4alldemo.p2exg5f.mongodb.net/?retryWrites=true&w=majority&appName=care4alldemo
-
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
+import cookieParser from 'cookie-parser';
+import cors from 'cors'; // Import CORS middleware
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import adminRoutes from './routes/admin.route.js';
@@ -11,10 +10,9 @@ import donationRoutes from './routes/donationRoutes.js';
 import feedbackRoutes from './routes/feedbackRoutes.js';
 import appointmentRoutes from './routes/appointmentRoutes.js';
 
-import cookieParser from 'cookie-parser';
-
 dotenv.config();
 
+// Connect to MongoDB
 mongoose
   .connect(process.env.MONGO, {
     useNewUrlParser: true,
@@ -29,6 +27,8 @@ mongoose
 
 const app = express();
 
+// Middleware
+app.use(cors()); // Use CORS middleware
 app.use(express.json());
 app.use(cookieParser());
 
@@ -40,10 +40,6 @@ app.use('/api/donations', donationRoutes);
 app.use('/api/feedbacks', feedbackRoutes);
 app.use('/api/appointments', appointmentRoutes);
 
-app.listen(3000, () => {
-  console.log('Server listening on port 3000!!');
-});
-
 // Error handling middleware
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
@@ -53,4 +49,10 @@ app.use((err, req, res, next) => {
     message,
     statusCode,
   });
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}!!`);
 });
