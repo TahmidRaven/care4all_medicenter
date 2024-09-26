@@ -1,3 +1,5 @@
+// mongodb+srv://group02:<db_password>@care4alldemo.p2exg5f.mongodb.net/?retryWrites=true&w=majority&appName=care4alldemo
+
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
