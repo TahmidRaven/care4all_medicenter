@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import backgroundImage from '../assets/backgroundWall.jpg';
 
 const AppointmentManagement = () => {
   const [appointments, setAppointments] = useState([]);
@@ -62,7 +63,9 @@ const AppointmentManagement = () => {
   };
 
   return (
-    <div className="appointment-management p-6 bg-gray-100 min-h-screen">
+    
+    <div className="appointment-management p-6 bg-gray-100 min-h-screen"
+    style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">Manage Appointments</h1>
       
       {/* Display existing appointments */}
