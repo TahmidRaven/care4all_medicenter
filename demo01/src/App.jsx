@@ -9,14 +9,8 @@ import Footer from './components/footer';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './pages/profile';
 import backgroundWall from './assets/backgroundWall.jpg'; // Import background image
+ 
 
-import AdminSignup from './pages/adminsignup';
-import AdminSignin from './pages/adminsignin';
-import AdminDashboard from './pages/admin';
-
-import Donation from './pages/Donations';
-import AppointmentManagement from './pages/AppointmentManagement'; // Make sure this matches your file structure
-import FeedbackRatings from './pages/FeedbackRatings';
 
 export default function App() {
   return (
@@ -40,13 +34,7 @@ export default function App() {
             <Route path="/signup" element={<Signup />} />
             <Route element={<PrivateRoute />}>
               <Route path='/profile' element={<Profile />} />
-            </Route>
-            <Route path="/adminsignup" element={<AdminSignup />} />
-            <Route path="/adminsignin" element={<AdminSignin />} />
-            <Route path='/admin/' element={<AdminDashboard />} />
-            <Route path="/donation" element={<Donation />} />
-            <Route path="/appointment" element={<AppointmentManagement />} /> {/* Updated to AppointmentManagement */}
-            <Route path="/feedback" element={<FeedbackRatings />} />
+             </Route>
           </Routes>
         </main>
 
