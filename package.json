@@ -14,10 +14,26 @@
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
+<<<<<<< HEAD
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.4.5",
     "nodemon": "^3.1.4"
+=======
+    "express": "^4.21.0",
+    "firebase": "^10.14.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongo": "^0.1.0",
+    "mongobd": "^0.0.1-security.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+>>>>>>> d75308cdb938d784efe93d151146086e5b755ae5
   }
 }
